@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&family=Questrial&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Unica+One&display=swap');
 
 /* #region === GENERAL === */
 
@@ -10,7 +10,10 @@
     --light-grey: #d1d1d1;
     --dark-aqua: #1e795f;
 
-    --margin-between: 5rem
+    --margin-between: 5rem;
+
+    --main-font: "Questrial", sans-serif;
+    --secondary-font: "Unica One", sans-serif;
 }
 
 * {
@@ -26,7 +29,7 @@ html {
 }
 
 body {
-    font-family: "Questrial", sans-serif;
+    font-family: var(--main-font);
     font-weight: 400;
 
     font-size: 16px;
@@ -39,15 +42,8 @@ body {
     justify-content: space-between;
 }
 
-/* h1,
-h2 {
-    font-family: "Unica One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-} */
-
 h1 {
-    font-family: "Unica One", sans-serif;
+    font-family: var(--secondary-font);
     font-weight: 400;
     font-style: normal;
     font-size: 4rem;
@@ -57,7 +53,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Unica One", sans-serif;
+    font-family: var(--secondary-font);
     font-size: 6rem;
     font-weight: 200;
     letter-spacing: -8px;
@@ -66,7 +62,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Questrial", sans-serif;
+    font-family: var(--main-font);
     letter-spacing: -4px;
     font-size: 6rem;
     font-weight: 200;
@@ -75,16 +71,19 @@ h3 {
 }
 
 h4 {
+    font-family: var(--main-font);
+    font-weight: 400;
     font-size: 2rem;
 }
 
 h5 {
     font-size: 1rem;
     font-weight: 600;
+    color: var(--dark-aqua);
 }
 
 h6 {
-    font-family: "Questrial", sans-serif;
+    font-family: var(--main-font);
     font-weight: 400;
     font-size: 1.5rem;
     /* text-transform: uppercase; */
@@ -380,6 +379,11 @@ footer {
 
 footer p {
     text-align: right;
+    font-size: 12px;
+}
+
+footer h5 {
+    color: var(--grey);
 }
 
 footer a {
@@ -387,7 +391,7 @@ footer a {
     border-radius: 10px;
     /* border: transparent 2px var(--grey); */
     text-decoration: none;
-    font-family: "Questrial", sans-serif;
+    font-family: var(--main-font);
     font-size: 6px;
     padding: 2px;
     transition: all .5s;
@@ -458,7 +462,7 @@ footer a:active {
 .project-nav a {
     text-decoration: none;
     color: var(--light-grey);
-    font-family: "Unica One", sans-serif;
+    font-family: var(--secondary-font);
     font-size: clamp(1.5rem, 2.5vw, 2.5rem);
     font-weight: 500;
     letter-spacing: -2px;
@@ -531,7 +535,7 @@ a.current:hover {
 }
 
 .description h3 {
-    /* font-family: "Questrial", sans-serif;
+    /* font-family: var(--main-font);
     letter-spacing: -4px; */
     padding-bottom: 1rem;
     padding-right: 50px;
@@ -1084,7 +1088,7 @@ video {
     font-size: 16px;
     padding: 2px;
     margin-bottom: 4px;
-    font-family: "Questrial", sans-serif;
+    font-family: var(--main-font);
     background-color: transparent;
 }
 
@@ -1124,7 +1128,7 @@ color: #fff;
     border-radius: 10px;
     color: #fff;
     /* text-transform: uppercase; */
-    font-family: "Questrial", sans-serif;
+    font-family: var(--main-font);
 }
 
 .form button:hover {
