@@ -255,16 +255,6 @@ nav a:active {
         "tesla roundabout ravinto robusto";
 }
 
-.projects:hover .card img {
-    opacity: 60%;
-    /* filter: grayscale(100); */
-}
-
-.projects .card:hover img {
-    opacity: 100%;
-    /* filter: grayscale(0); */
-}
-
 .card {
     border: dotted 2px rgba(35, 31, 32, 0);
     border-radius: 6px;
@@ -274,32 +264,45 @@ nav a:active {
         background-color .8s;
 }
 
-.card:hover {
-    border: dotted 2px var(--grey);
-    padding: 1rem;
-    border-radius: 15px;
-    background-color: #fff;
-    box-shadow: var(--grey) 6px 10px;
-    /* margin: 4px; */
-}
-
-.card:hover img {
-    border-radius: 10px;
-    border: solid 3px var(--grey);
-    /* opacity: 100%; */
-    transition: all .6s;
-}
-
 .card-link {
     text-decoration: none;
     color: inherit;
     display: block;
 }
 
-.card-link:active .card {
+@media (hover: hover) {
+
+    .projects:hover .card img {
+        opacity: 60%;
+        /* filter: grayscale(100); */
+    }
+
+    .projects .card:hover img {
+        opacity: 100%;
+        /* filter: grayscale(0); */
+    }
+
+    .card:hover {
+        border: dotted 2px var(--grey);
+        padding: 1rem;
+        border-radius: 15px;
+        background-color: #fff;
+        box-shadow: var(--grey) 6px 10px;
+        /* margin: 4px; */
+    }
+
+    .card:hover img {
+        border-radius: 10px;
+        border: solid 3px var(--grey);
+        /* opacity: 100%; */
+        transition: all .6s;
+    }
+
+    .card-link:active .card {
     box-shadow: var(--grey) 2px 6px;
     translate: 4px 4px;
     transition: none;
+}
 }
 
 .card figcaption {
@@ -1148,6 +1151,8 @@ color: #fff;
 
     .bio h2 {
         font-size: 5rem;
+        text-indent: 0;
+        margin-left: -7px;
     }
 
 }
