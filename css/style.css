@@ -299,10 +299,10 @@ nav a:active {
     }
 
     .card-link:active .card {
-    box-shadow: var(--grey) 2px 6px;
-    translate: 4px 4px;
-    transition: none;
-}
+        box-shadow: var(--grey) 2px 6px;
+        translate: 4px 4px;
+        transition: none;
+    }
 }
 
 .card figcaption {
@@ -459,7 +459,7 @@ footer a:active {
     text-decoration: none;
     color: var(--light-grey);
     font-family: "Unica One", sans-serif;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
     font-weight: 500;
     letter-spacing: -2px;
     line-height: .8;
@@ -497,20 +497,22 @@ a.current:hover {
 } */
 
 .project-overview {
-    display: flex;
+    display: grid;
+    grid-template-columns: 60% 40%;
     /* width: 100%; */
     margin: 0 6%;
     margin-top: clamp(0px, 1vw, 2rem);
     margin-bottom: var(--margin-between);
-    height: 60vh;
+    /* height: 60vh; */
+    height: auto;
     min-height: 520px;
     animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .25s both;
     max-width: 100%;
 }
 
 .overview-left {
-    flex-grow: 1;
-    max-width: 50%;
+    /* flex-grow: 1; */
+    /* max-width: 50%; */
     min-width: 0;
     display: flex;
     flex-direction: column;
@@ -866,6 +868,11 @@ a.current:hover {
     animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .5s both;
 }
 
+.bio h2 {
+    text-indent: 0;
+    margin-left: -7px;
+}
+
 .bio p {
     padding-bottom: 1rem;
     animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
@@ -1153,8 +1160,6 @@ color: #fff;
 
     .bio h2 {
         font-size: 5rem;
-        text-indent: 0;
-        margin-left: -7px;
     }
 
 }
