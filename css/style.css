@@ -860,10 +860,8 @@ a.current:hover {
 
 .bio {
     position: sticky;
-    /* flex: 1 0 50%; */
     top: 0;
     min-width: 250px;
-    /* border: solid 1px transparent; */
     overflow: hidden;
 }
 
