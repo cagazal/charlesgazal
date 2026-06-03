@@ -556,9 +556,10 @@ a.current:hover {
 
 .overview-right {
     height: 100%;
-    min-width: 50%;
-    display: flex;
+    /* min-width: 50%; */
     overflow: hidden;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 1;
 }
 
 .overview-right img {
@@ -797,6 +798,7 @@ a.current:hover {
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
     margin-top: 2rem;
+    margin-bottom: var(--margin-between);
     display: flex;
     gap: 2rem;
 }
