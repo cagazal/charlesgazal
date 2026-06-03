@@ -850,15 +850,20 @@ a.current:hover {
 
 .blurb {
     display: flex;
+    position: relative;
     gap: 3rem;
     /* justify-content: space-around; */
     /* padding-top: clamp(0px, calc(2.5vw - 2rem), 1.5rem) */
     margin-bottom: 2rem;
+    align-items: flex-start;
 }
 
 .bio {
+    position: sticky;
+    /* flex: 1 0 50%; */
+    top: 0;
     min-width: 250px;
-    border: solid 1px transparent;
+    /* border: solid 1px transparent; */
     overflow: hidden;
 }
 
