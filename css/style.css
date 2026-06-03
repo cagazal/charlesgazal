@@ -459,7 +459,7 @@ footer a:active {
     text-decoration: none;
     color: var(--light-grey);
     font-family: "Unica One", sans-serif;
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-size: clamp(1rem, 2vw, 2rem);
     font-weight: 500;
     letter-spacing: -2px;
     line-height: .8;
@@ -503,6 +503,7 @@ a.current:hover {
     margin-top: clamp(0px, 1vw, 2rem);
     margin-bottom: var(--margin-between);
     height: 60vh;
+    min-height: 520px;
     animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .25s both;
     max-width: 100%;
 }
@@ -514,12 +515,12 @@ a.current:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 50px 0 50px 50px;
+    padding: 40px 0 40px 40px;
     background-color: var(--light-grey);
 }
 
 .overview-left p {
-    padding-right: 50px;
+    padding-right: 40px;
 }
 
 .overview-left img {
@@ -557,9 +558,8 @@ a.current:hover {
 .overview-right {
     height: 100%;
     /* min-width: 50%; */
+    flex: 0 0 50%;
     overflow: hidden;
-    aspect-ratio: 1 / 1;
-    flex-shrink: 1;
 }
 
 .overview-right img {
